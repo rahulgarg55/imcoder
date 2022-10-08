@@ -1,0 +1,180 @@
+{% extends 'main/base.html' %} 
+<!doctype html>
+<html lang="en">
+{% load static %} 
+
+{% block bootstrap %} 
+{{block.super}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@800&display=swap" rel="stylesheet">
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link  href="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+{% endblock bootstrap %} 
+
+{% block title %}
+IM-Coder - Heaven for Programmers
+{% endblock %}
+
+{% block css %} 
+{{block.super}} 
+
+<style>
+
+        .about-content
+        {
+            font-family: 'Baloo Tamma 2', cursive;
+        }
+
+        .social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
+}
+    </style>
+{% endblock css %}
+
+{% block content %} 
+
+    <!--team -->
+<!--     <div class="bg-light py-5">
+  <div class="container py-5">
+    <div class="row mb-4"> -->
+      <div class="container d-flex align-items-center justify-content-center bg-dark text-white my-4">
+  <h3>IM-Coder Team</h3> 
+      </div>
+
+
+ <div class="bg-white py-5">
+  <div class="container py-5">
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+        <h2 class="font-weight-light" style="text-align: center;">Arshit Kaur</h2>
+        <p class="font-italic text-muted mb-4" style=" text-align: justify; "><br>
+                    Arshit Kaur is a student in the Department of Computer Science and Engineering, Chandigarh Group of Colleges, Landran,
+Mohali, Punjab, India. She has participated in various coding contests and is familiar with C++ and in Web Development.<br>
+      </div>
+      <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="{% static 'main/images/ArshitKaur.jpg' %}" height="350"  style="border-radius: 50%; border: 5px solid #555;" class="d-block w-100" alt=""></div>
+    </div>
+</div>
+
+ <div class="bg-white py-5">
+  <div class="container py-5">
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+        <h2 class="font-weight-light" style="text-align: center;">Harsh Jindal</h2>
+        <p class="font-italic text-muted mb-4" style=" text-align: justify; "><br>
+                    Harsh Jindal is a student in the Department of Computer Science and Engineering, Chandigarh Group of Colleges, Landran,
+Mohali, Punjab, India. He is passionate in research field and he has published three research papers. He has experience in Web
+Development and is familiar with C, C++ and Python. 
+                    <br>
+      </div>
+      <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="{% static 'main/images/HarshJindal.jpg' %}" height="350"  style="border-radius: 50%; border: 5px solid #555;" class="d-block w-100" alt=""></div>
+    </div>
+</div>
+ <div class="bg-white py-5">
+  <div class="container py-5">
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+        <h2 class="font-weight-light" style="text-align: center;">Arshita</h2>
+        <p class="font-italic text-muted mb-4" style=" text-align: justify; "><br>
+                    Arshita is a student in the Department of Computer Science and Engineering, Chandigarh Group of Colleges, Landran, Mohali,
+Punjab, India. She has experience in Web Development and is familiar with C++ and Python.
+                    <br>
+      </div>
+      <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="{% static 'main/images/Arshita.jpeg' %}" height="350"  style="border-radius: 50%; border: 5px solid #555;" class="d-block w-100" alt=""></div>
+    </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <!--Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login to IM-Coder</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <input type="submit" value="Login" class="btn btn-primary">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Signup Modal -->
+    <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SignupModalLabel">Get an IM-Coder Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+                        <input type="submit" value="Create Account" class="btn btn-primary">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

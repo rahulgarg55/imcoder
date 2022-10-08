@@ -1,0 +1,319 @@
+{% extends 'main/base.html' %}
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+
+{% block title %}
+IM-Coder - Heaven for Programmers
+{% endblock %}
+
+{% block css %} 
+{{block.super}}
+{% endblock css %}
+
+
+{% block content %}
+
+<div class="container d-flex align-items-center justify-content-center bg-dark text-white my-4">
+  <h3>IM-Coder Blog</h3>
+</div>
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">World</strong>
+            <h3 class="mb-0">Global Conferences</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">Read about Global Conferences related to new technologies coming in this world.
+            </p>
+            <a href="https://www.computer.org/publications/tech-news/events/2022-top-computer-science-conferences" class="stretched-link" style="text-decoration: none;">Continue Reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="{% static 'main/images/img1.jpg' %}"
+              alt="">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Design</strong>
+            <h3 class="mb-0">Learn Web Design</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">Become a master in Web Development by reading this blog.</p>
+            <a href="https://blog.sellfy.com/cheat-sheets-for-web-designers/" class="stretched-link" style="text-decoration: none;">Continue Reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="{% static 'main/images/img2.jpg' %}" alt="">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-danger">Front-End</strong>
+            <h3 class="mb-0">Bootstrap Templates</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">Check various fascinating templates here.</p>
+            <a href="https://getbootstrap.com/" class="stretched-link" style="text-decoration: none;">Continue Reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="{% static 'main/images/img3.jpg' %}" alt="">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-warning">Python</strong>
+            <h3 class="mb-0">Learn Python</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">If You are new to python, just check this blog.</p>
+            <a href="https://www.pythoncheatsheet.org/" class="stretched-link" style="text-decoration: none;">Continue Reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="{% static 'main/images/img5.jpg' %}" alt="">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<div class="container d-flex align-items-center justify-content-center bg-dark text-white my-4">
+  <h2>Our Projects</h2>
+</div>
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{% static 'main/images/project7.jpg' %}" alt="">
+
+        <div class="card-body">
+          <div class="col">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-warning">Web Development</strong>
+                <h5 class="mb-0">Complete Web Development Course</h5><br>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="mb-auto" style="text-align: justify;">Learn Complete Web Development from beginner level to advance level.</p><br>
+                <button type="button" class="btn btn-outline-primary"><a href="https://www.udemy.com/course/complete-web-development-course/" style="text-decoration: none; color: black;">Enroll Now</a></button>
+              </div>
+    
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{% static 'main/images/project6.jpg' %}" alt="">
+
+        <div class="card-body">
+          <div class="col">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Python</strong>
+                <h5 class="mb-0">Complete Python Course</h5><br>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="mb-auto" style="text-align: justify;">Learn Complete Python Development from beginner level to advance level.</p><br>
+                <button type="button" class="btn btn-outline-primary"><a href="https://www.udemy.com/course/python-the-complete-python-developer-course/" style="text-decoration: none; color: black;">Enroll Now</a></button>
+              </div>
+    
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{% static 'main/images/Project5.jpg' %}" alt="">
+        <div class="card-body">
+          <div class="col">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-secondary">Java</strong>
+                <h5 class="mb-0">Complete Java Development Course</h5><br>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="mb-auto" style="text-align: justify;">Learn Complete Java Development from beginner level to advance level.</p><br>
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                  <button type="button" class="btn btn-outline-primary"><a href="https://www.udemy.com/course/build-java-projects-web-applications-jsp-jdbc-spring/" style="text-decoration: none; color: black;">Enroll Now</a></button>
+                </div>
+              </div>
+    
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{% static 'main/images/project8.jpg' %}" alt="">
+
+        <div class="card-body">
+          <div class="col">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-warning">Machine Learning</strong>
+                <h5 class="mb-0">Complete Machine Learning</h5><br>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="mb-auto" style="text-align: justify;">Learn Complete ML from beginner level to advance level.</p><br>
+                <button type="button" class="btn btn-outline-primary"><a href="https://www.udemy.com/course/machine-learning-course-with-python/" style="text-decoration: none; color: black;">Enroll Now</a></button>
+              </div>
+    
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{% static 'main/images/project9.jpg' %}" alt="">
+
+        <div class="card-body">
+          <div class="col">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Digital Marketing</strong>
+                <h5 class="mb-0">Complete Digital Marketing Course</h5><br>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="mb-auto" style="text-align: justify;">Learn Complete Digital Marketing from beginner level to advance level.</p><br>
+                <button type="button" class="btn btn-outline-primary"><a href="https://www.udemy.com/course/learn-digital-marketing-course/" style="text-decoration: none; color: black;">Enroll Now</a></button>
+              </div>
+    
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{% static 'main/images/project10.jpg' %}" alt="">
+        <div class="card-body">
+          <div class="col">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-secondary">Data Science</strong>
+                <h5 class="mb-0">Complete Data Science Course</h5><br>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="mb-auto" style="text-align: justify;">Learn Complete Data Science from beginner level to advance level.</p><br>
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                  <button type="button" class="btn btn-outline-primary"><a href="https://www.udemy.com/course/data-science-with-python-complete-course/" style="text-decoration: none; color: black;">Enroll Now</a></button>
+                </div>
+              </div>
+    
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Team  -->
+
+<div class="container d-flex align-items-center justify-content-center bg-dark text-white my-4">
+  <h3>IM-Coder Team</h3>
+</div>
+
+<div class="container" style="display:flex;justify-content: center;width:70%;align-items: center;">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5" style="display:flex;justify-content: center;align-items: center;flex-wrap: wrap;">
+    <div class="col-12 col-sm-6 col-md-4"><img src="{% static 'main/images/ArshitKaur.jpg' %}" height="180"  style="border-radius: 50%; border: 5px solid #555;" class="d-block w-100" alt=""><h5 style="text-align: center;">Arshit Kaur</h5><p style="text-align: center;">Front-End Developer</p></div>
+    <div class="col-12 col-sm-6 col-md-4"><img src="{% static 'main/images/HarshJindal.jpg' %}" height="180" style="border-radius: 50%; border: 5px solid #555;"  class="d-block w-100" alt=""><h5 style="text-align: center;">Harsh Jindal</h5><p style="text-align: center;">Front-End Developer</p></div>
+    <div class="col-12 col-sm-6 col-md-4"><img src="{% static 'main/images/Arshita.jpeg' %}" height="180" style="border-radius: 50%; border: 5px solid #555;"  class="d-block w-100" alt=""><h5 style="text-align: center;">Arshita</h5><p style="text-align: center;">Back-End Developer</p></div>
+  </div>
+</div>
+<!-- end of Team  -->
+
+
+<br>
+<br>
+<br>
+<br>
+
+<!-- Life at im coder -->
+<div class="container d-flex align-items-center justify-content-center bg-dark text-white my-4"><h3>Life At IM-Coder</h3>
+</div>
+
+<div class="container my-4">
+<div id="carouselExampleCaptions1" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+      aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+      aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'main/images/culture2.jpg' %}" height="500" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Work and Enjoyment</h2>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'main/images/culture.jpg' %}" height="500" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Employees work as a whole team.</h2>  
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'main/images/culture3.jpg' %}" height="500" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Workaholic Environment</h2>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<!-- end of life at im coder -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--Google map-->
+<div class="container d-flex justify-content-center align-items-center">
+<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+  <div class="container d-flex align-items-center justify-content-center bg-dark text-white my-4"><h3>LOCATION</h3></div>
+  <iframe width="500" height="350" src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+    style="border:0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+
+{% endblock content %}
